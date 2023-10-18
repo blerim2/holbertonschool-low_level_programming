@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- ** _isalpha - checks for an alphabetic character; in the standard "C" locale
- ** @c: the character to check
- ** Return: 1 if c is a letter, lowercase or uppercase, 0 otherwise
+ ** print_sign - used to print sign
+ ** @n: the character to check
+ ** Return: 1 n is greater than zero, 0 if n is zero, -1 if n is less then zero
  **/
 
 int print_sign(int n)
