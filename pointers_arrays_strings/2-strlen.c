@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- ** reset_to_98 - updatesthevalue
- ** @n: update the value
+ ** _strlen - returns the length of a string.
+ ** @s: input string.
+ ** Return: length of a string.
  **/
 
 int _strlen(char *s)
