@@ -1,20 +1,20 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- ** string_toupper - Concatenates two strings.
- ** 
- ** @char: char string.
- **
- ** Return: Pointer to the resulting string str..
+ ** string_toupper - changes all lowercase letter of a string to uppercase
+ ** @str: string
+ ** Return: character
  **/
 
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
-	int i;
+	int i = 0;
+
 		for (i = 0; str[i] != '\0'; i++)
-		{
+
 		if (str[i] >= 'a' && str[i] <= 'z')
-		str[i] = str[i] - 32;
-		}
-		return (str);
+			str[i] = str[i] - 32;
+
+	return (str);
 }
