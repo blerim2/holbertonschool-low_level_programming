@@ -1,10 +1,11 @@
 #include "dog.h"
 
 /**
- ** struct dog - structure for dogs
+ ** init_dog - structure for dogs
  ** @name: first member
  ** @age: second member
  ** @owner: third member
+ ** @d: compares
  **/
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
