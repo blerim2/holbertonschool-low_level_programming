@@ -1,24 +1,18 @@
 #include <stddef.h>
+/* defines size_t */
 
 /**
- * int_index - search for integer in array via function pointer
+ * array_iterator - execute function on an array via a function ptr
  * @array: array
  * @size: size of array
- * @cmp: pointer to searching/comparing function that we need to execute
- * Return: index where integer's found, -1 if not found or array not present
+ * @action: pointer to function that we need to execute
  */
 
-int int_index(int *array, int size, int (*cmp)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	size_t i;
 
-	if (array == NULL || cmp == NULL || size <= 0)
-		return (-1);
-
-	for (i = 0; i < size; i++)
-		if (cmp(*(array + i)))
-			return (i);
-
-	return (-1);
-
+	if (array != NULL && action != NULL)
+		for (i = 0; i < size; i++)
+			action(*(array + i));
 }
